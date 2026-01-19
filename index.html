@@ -134,7 +134,7 @@ async function handleAttendance() {
 
     // ផ្ញើទៅ Telegram
     try {
-        const resp = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        const resp = await fetch(`https://t.me/my_staff_att_2026_bot${BOT_TOKEN}/sendMessage`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ chat_id: CHAT_ID, text: msg, parse_mode: "HTML" })
@@ -148,3 +148,4 @@ async function handleAttendance() {
 </script>
 </body>
 </html>
+
